@@ -1,0 +1,12 @@
+.home_row {
+  display: flex;
+  z-index: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.home_banner {
+  width: 100%;
+  z-index: -1;
+  margin-bottom: -150px;
+  height: 650px;
+}
