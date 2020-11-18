@@ -1,12 +1,13 @@
-import React, {createContext, useContext, useReducer} from "react";
-//prepare datalayer
-export const StateContext = createContext();
-//wrap our app and provide the datalayer
-export const StateProvider =({reducer, intialState, children})=>(
-    <StateContext.Provider value={useReducer(reducer, intialState)}>
-        {children}
-        </StateContext.Provider>
-);
-// pull information from the data layer
-export const useStateValue = () => useContext(StateContext);
+import React , {createContext,useContext,useReducer} from "react";
 
+// Prepares the datalayer(layer where when items added to cart is pushed)
+export const StateContext = createContext();
+
+export const StateProvider = ({ reducer,intialState,children}) => (
+      <StateContext.Provider value={useReducer(reducer,intialState)}>
+            {children}
+      </StateContext.Provider>
+);
+
+// Pull info from data layer
+export const useStateValue = ( ) =>  useContext(StateContext);
