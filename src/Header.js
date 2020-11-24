@@ -7,7 +7,7 @@ import { useStateValue } from './StateProvider';
 import {auth} from "./firebase";
 
 
-function header() {
+function Header() {
     const[{basket, user},dispatch]=useStateValue();
 
     const handleAuthentication = () =>{
@@ -53,6 +53,6 @@ function header() {
     )
 }
 
-export default header
+export default Header
 
 //homejavascript

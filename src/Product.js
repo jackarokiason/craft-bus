@@ -1,7 +1,7 @@
 import React from 'react';
 import "./product.css";
 import { useStateValue } from './StateProvider';
-function  product({id,title,image,price,rating}) {
+function  Product({id,title,image,price,rating}) {
     const[{basket}, dispatch] = useStateValue();
     console.log('this is the basket >>>',basket);
     const addToBasket = () => {
@@ -41,4 +41,4 @@ function  product({id,title,image,price,rating}) {
     )
 }
 
-export default  product;
+export default  Product;
